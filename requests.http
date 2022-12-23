@@ -1,0 +1,28 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Jin Ramirez",
+    "age": "20",
+    "email": "jinramirez@gmail.com"
+}
+
+###
+GET http://localhost:9000/api/users HTTP/1.1
+
+###
+GET http://localhost:9000/api/users/63a5cf18029b317ab6dfd516 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/users/63a5d72e25da694c739db086 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "oliver ramirez",
+    "age": "20",
+    "email": "oliramirez@gmail.com"
+}
+
+###
+DELETE  http://localhost:9000/api/users/63a5d72e25da694c739db086 HTTP/1.1
